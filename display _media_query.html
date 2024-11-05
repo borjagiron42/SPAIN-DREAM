@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display, y media query</title>
+    <style>
+        .flex_container {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction:row ;
+            align-items: start;
+            justify-content: start;
+            width: 800px;
+            height: 800px;
+         }
+        .flex_container .item1 
+            {background-color: rgb(255, 0, 179);
+            flex-grow: 2;
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+            width: 150px;
+            height: 150px;
+            }
+        .flex_container .item2 
+            {background-color: rgb(0, 0, 255);
+            flex-grow: 1; 
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+            width: 150px;
+            height: 150px;
+            }
+        .flex_container .item3 
+            {background-color: red;
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+            width: 150px;
+            height: 150px;
+        }
+        @media (max-width:768px) {
+            .flex_container {
+                flex-direction: column;
+            }  
+        }
+</style>
+    </head>
+    <body>
+    
+    <h1>Create a Flex Container</h1>
+    <div class="flex_container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+    </div> 
+    
+    </body>
+</html>

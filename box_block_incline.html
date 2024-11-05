@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Box y elementos block e inline</title>
+    <style>
+        .div1{
+        
+            width: 300px;
+            height: 100px;
+            border: 1px solid orange;
+            box-sizing: border-box;
+        }
+        .div2{
+        
+        width: 300px;
+        height: 100px;
+        border: 1px solid red;
+        box-sizing: border-box;
+    }
+    </style>
+    
+  </head>
+  <body>
+    <h1>Box sizing</h1>
+    <div class="div1">Esta div es mas pequeña (ancho 300px alto 100px)</div>
+    <br>
+    <br>
+    <div class="div2">Esta div es mas grande (ancho 300px alto 100px)</div>
+
+    <br />
+    <h1>Elementos block</h1>
+    <p style="border: 1px solid blue;">hello world</p>
+    <div style="border: 1px solid green;">hello world</div>
+
+    <br />
+    <h1>Elementos inline</h1>
+    <p>Este elemento es un spam <spam style="border: 1px solid black"> Hello world</spam></p>
+  </body>
+</html>

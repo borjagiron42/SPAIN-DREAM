@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1><img src="{{ url_for('static', filename='logo.png') }}" alt="Spain Dream logo" width="300" /></strong></h1>
+    <h1 style="color:rgb(0, 0, 0); text-align: center"><strong>SPAIN DREAM </h1>
+    <p style="font-size:24px">
+        El <strong>aprendizaje de idiomas</strong> puede ser un instrumento para el aprendizaje de otras culturas, de otros puntos de vista, y una forma para el entendimiento entre distintas maneras de entender el mundo.
+        </br>
+        </br>
+        Creemos que el aprendizaje del español puede ser un instrumento para el entendimiento entre diferentes culturas, y nuestra app pretende facilitar su aprendizaje de una manera inclusiva y accesible a todo el mundo.
+        </br>
+        </br>
+        Para conocer más sobre nuestro <strong>modelo de negocio</strong>, visitar el siguiente (<a href="{{ url_for('business') }}">enlace</a>). 
+        Para utilizar nuestra <strong>app</strong>,
+        visitar el siguiente (<a href="{{ url_for('light_talk_app') }}">enlace</a>).
+    </p>
+
+    <style>
+        
+        .flex_container {
+            background-color: #cec288;
+            display: flex;
+            flex-direction:row ;
+            align-items: start;
+            justify-content: start; 
+            width: 975px;
+            height: 300px;
+            
+         }
+        .flex_container .item1 
+            {background-color: rgb(255, 255, 255);
+            flex-grow: 2;
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+            width: 300px;
+            height: 300px;
+            }
+        .flex_container .item2 
+            {background-color: rgb(255, 255, 255);
+            flex-grow: 1; 
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+            width: 300px;
+            height: 300px;
+            }
+        .flex_container .item3 
+            {background-color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+            width: 300px;
+            height: 300px;
+        }
+        .flex_container .item4 
+            {background-color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+            width: 300px;
+            height: 300px;
+            }
+        @media (max-width:768px) {
+            .flex_container {
+                flex-direction:row ;
+            }  
+        }
+</style>
+    </head>
+    <body>
+    
+    <h1>Desarrolladores</h1>
+    <div class="flex_container">
+        <div class="item1">Borja Girón Muñoz: Breve biografía. Enlace al cv.</div>
+        <div class="item2">Mikael Garcia Nuñez: Breve biografía. Enlace al cv.</div>
+        <div class="item3">Maria Martin Mayo: Breve biografía. Enlace al cv.</div>
+        <div class="item4">Rodrigo Ruiz Diaz: Breve biografía. Enlace al cv.</div>
+    </div> 
+        </body>
+    </p>
+
+{% endblock content %}
