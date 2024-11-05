@@ -1,0 +1,101 @@
+
+body {
+    background-color: #022333 ; /* Naranja */
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/* Estilo para el logo */
+.text-logo {
+    display: inline-block;
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Efecto de color y movimiento al pasar el ratón sobre el logo */
+  .text-logo:hover {
+    color: white; 
+    transform: scale(1.3) translateY(-5px); /* Aumenta ligeramente el tamaño y mueve hacia arriba */
+  }
+  
+  /* Estilo para los enlaces de navegación */
+  nav ul li a {
+    display: inline-block;
+    padding: 0.5rem;
+    color: #333; /* Color inicial del enlace */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Efecto de color y movimiento en los enlaces al pasar el ratón */
+  nav ul li a:hover {
+    color: white; /* Cambia el color del enlace */
+    transform: translateX(5px) rotate(-2deg); /* Mueve el enlace a la derecha y aplica una ligera rotación */
+  }
+  
+  /* Efecto opcional de aparición de letras */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .text-logo, nav ul li a {
+    animation: fadeIn 0.8s ease-in-out forwards;
+  }
+  /* Selecciona el icono dentro de .text-logo */
+.text-logo i {
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: #333; /* Color inicial del icono */
+  }
+  
+  /* Efecto al pasar el ratón sobre el icono */
+  .text-logo:hover i {
+    color: #ffffff; /* Cambia el color al pasar el ratón */
+    transform: rotate(360deg) scale(1.3); /* Rota y aumenta el tamaño ligeramente */
+  }
+ /* Efecto inicial para las cajas */
+.flex_container .item1,
+.flex_container .item2,
+.flex_container .item3,
+.flex_container .item4 {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px; 
+    font-size: 30px; 
+    width: 300px; 
+    height: 300px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto para el tamaño */
+.flex_container .item1:hover,
+.flex_container .item2:hover,
+.flex_container .item3:hover,
+.flex_container .item4:hover {
+    transform: scale(1.1); /* Aumentar el tamaño al 110% */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+/* Animación de entrada para la imagen */
+@keyframes slideIn {
+  0% {
+      transform: translateY(-50px); /* Comienza 50px por encima */
+      opacity: 0; /* Invisible al inicio */
+  }
+  100% {
+      transform: translateY(0); /* Finaliza en su posición original */
+      opacity: 1; /* Totalmente visible */
+  }
+}
+
+/* Estilo para la imagen */
+img {
+  animation: slideIn 0.8s ease forwards; /* Aplica la animación */
+  /* Puedes ajustar el tiempo de la animación (0.8s) y el tipo de easing */
+}
+

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+/* CSS utilities */
+* {
+    box-sizing: border-box;
+    padding: 4px;
+    margin: 2px;
+}
+body {
+    font-family: "Roboto";
+    line-height: 1.6;
+}
+/* Google fonts Roboto  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+/* CSS utilities */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 2;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+  line-height: 1.6;
+}
+.container {
+  margin: auto;
+  max-width: 1320px;
+}
+ul {
+  list-style: none;
+  font-size: 400;
+}
+a {
+  color: #c16d56;
+}
+/* Navbar */
+.section_light_talk_app_navbar {
+background-color: #fceab2;
+}
+.light_talk_app_navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 70px;
+    align-items: center;
+    background-color: #fceab2;
+    padding: 0px;
+}
+.light_talk_app_navbar a {
+    color: #022333 ;
+    padding: 10px 20px;
+    margin: 0px 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.light_talk_app_navbar a:hover {
+    border-bottom: white 2px solid
+}
+.light_talk_app_navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+.light_talk_app_navbar .logo {
+    font-weight: 400;
+}
+.text-logo {
+    color: #022333 ;
+}
+/* Media query */
+@media (max-width: 768px) {
+    .light_talk_app_navbar {
+        height: 180px;
+        flex-direction: column;
+    }
+    .light_talk_app_navbar ul {
+        display: flex;
+        flex-direction: column;
+    };}
+
